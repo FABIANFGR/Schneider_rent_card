@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renta Ya! - Alquiler de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="logo">
+            <h1>Renta Ya!</h1>
+        </div>
+        <nav>
+            <a href="#gallery">Carros</a>
+            <a href="#reservation">Reservación</a>
+            <a href="#about">Nosotros</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-text">
+            <h2>Encuentra el Vehículo Perfecto para tu Viaje</h2>
+            <button onclick="scrollToGallery()">Explorar Vehículos</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Galería de Vehículos</h2>
+        <div class="vehicle-cards">
+            <div class="card">
+                <img src="car1.jpg" alt="Car 1">
+                <div class="card-content">
+                    <h3>Modelo A</h3>
+                    <p>Capacidad: 5 personas | Transmisión Automática</p>
+                    <button onclick="openReservationForm('Modelo A')">Reservar</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="car2.jpg" alt="Car 2">
+                <div class="card-content">
+                    <h3>Modelo B</h3>
+                    <p>Capacidad: 7 personas | Transmisión Manual</p>
+                    <button onclick="openReservationForm('Modelo B')">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation">
+        <h2>Formulario de Reservación</h2>
+        <form id="reservationForm">
+            <label for="vehicle">Vehículo</label>
+            <input type="text" id="vehicle" name="vehicle" readonly>
+
+            <label for="startDate">Fecha de Inicio</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="endDate">Fecha de Fin</label>
+            <input type="date" id="endDate" name="endDate" required>
+
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+,,,.>:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
